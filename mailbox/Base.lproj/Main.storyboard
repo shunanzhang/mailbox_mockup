@@ -31,7 +31,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" id="Ecx-Fd-Whn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1346"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav" id="LWT-vU-pAw">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
@@ -62,7 +62,7 @@
                                         </connections>
                                     </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="FLL-uh-lEe">
-                                        <rect key="frame" x="0.0" y="72" width="320" height="1202"/>
+                                        <rect key="frame" x="0.0" y="144" width="320" height="1202"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed" id="laL-VU-a5p">
