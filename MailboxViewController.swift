@@ -10,6 +10,8 @@ import UIKit
 
 class MailboxViewController: UIViewController {
 
+    @IBOutlet weak var testScrollView: UIScrollView!
+    
     @IBOutlet weak var mailboxScrollView: UIScrollView!
     @IBOutlet weak var archiveIconView: UIImageView!
     @IBOutlet weak var allView: UIView!
@@ -45,16 +47,22 @@ class MailboxViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         mailboxScrollView.contentSize = CGSize(width: 320, height: 1202)
+        
         messageVeryOriginalCenter = CGPoint(x:messageView.center.x, y:messageView.center.y)
         laterVeryOriginalCenter = CGPoint(x:laterIconView.center.x, y:laterIconView.center.y)
         listVeryOriginalCenter = CGPoint(x: listIconView.center.x, y:listIconView.center.y)
-        allVeryOriginalCenter = CGPoint(x: allView.center.x, y: allView.center.y)
         archiveVeryOriginalCenter = CGPoint(x:archiveIconView.center.x, y:archiveIconView.center.y)
         deleteVeryOriginalCenter = CGPoint(x:deleteIconView.center.x, y:deleteIconView.center.y)
+        allVeryOriginalCenter = CGPoint(x: allView.center.x, y: allView.center.y)
+
+        testScrollView.contentSize = CGSize(width: 320, height: 1200)
+        
         rescheduleView.alpha = 0
         listView.alpha = 0
         laterIconView.alpha = 0
         listIconView.alpha = 0
+        
+        
 
     }
 
@@ -195,7 +203,7 @@ class MailboxViewController: UIViewController {
                 
                 listIconView.alpha = 0
                 laterIconView.alpha = 0
-                archiveIconView.alpha = 0
+                archiveIconView.alpha = (messageView.center.x - 160)/60
                 deleteIconView.alpha = 0
             
             
